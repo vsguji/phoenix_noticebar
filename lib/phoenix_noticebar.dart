@@ -1,7 +1,6 @@
 library phoenix_noticebar;
 
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
-}
+///
+export 'marquee_text.dart';
+export 'notice_bar_with_button.dart';
+export 'notice_bar.dart';

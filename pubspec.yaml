@@ -1,5 +1,5 @@
 name: phoenix_noticebar
-description: A new Flutter package project.
+description: phoenix 将做为企业级基础组件:Noticebar,提供项目支持。
 version: 1.0.0
 homepage: 'https://github.com/vsguji/phoenix_noticebar.git'
 
@@ -10,7 +10,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
+  phoenix_base: ^1.0.6
+  bindings_compatible: ^1.0.1
 dev_dependencies:
   flutter_test:
     sdk: flutter
