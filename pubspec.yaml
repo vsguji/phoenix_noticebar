@@ -1,6 +1,6 @@
 name: phoenix_noticebar
 description: phoenix 将做为企业级基础组件:Noticebar,提供项目支持。
-version: 1.0.0
+version: 1.0.1
 homepage: 'https://github.com/vsguji/phoenix_noticebar.git'
 
 environment:
