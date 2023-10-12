@@ -9,7 +9,7 @@ import 'marquee_text.dart';
 /// 2. 支持设置或者隐藏左右图标
 /// 3. 支持跑马灯
 
-class BrnNoticeBar extends StatelessWidget {
+class NoticeBar extends StatelessWidget {
   /// 自定义左边的图标
   final Widget? leftWidget;
 
@@ -53,7 +53,7 @@ class BrnNoticeBar extends StatelessWidget {
   /// 内容的内边距
   final EdgeInsets? padding;
 
-  const BrnNoticeBar(
+  const NoticeBar(
       {Key? key,
       this.leftWidget,
       this.showLeftIcon = true,
@@ -152,73 +152,93 @@ class BrnNoticeBar extends StatelessWidget {
 class NoticeStyles {
   ///红色+失败+箭头
   static NoticeStyle failWithArrow = NoticeStyle(
-      PhoenixTools.getAssetImage(NoticeBarAssets.iconNoticeFail),
+      PhoenixTools.getAssetImage(NoticeBarAssets.iconNoticeFail,
+          package: 'phoenix_noticebar'),
       const Color(0xFFFA3F3F),
       const Color(0xFFFEEDED),
-      PhoenixTools.getAssetImage(NoticeBarAssets.iconNoticeArrowRed));
+      PhoenixTools.getAssetImage(NoticeBarAssets.iconNoticeArrowRed,
+          package: 'phoenix_noticebar'));
 
   ///红色+失败+关闭
   static NoticeStyle failWithClose = NoticeStyle(
-      PhoenixTools.getAssetImage(NoticeBarAssets.iconNoticeFail),
+      PhoenixTools.getAssetImage(NoticeBarAssets.iconNoticeFail,
+          package: 'phoenix_noticebar'),
       const Color(0xFFFA3F3F),
       const Color(0xFFFEEDED),
-      PhoenixTools.getAssetImage(NoticeBarAssets.iconNoticeCloseRed));
+      PhoenixTools.getAssetImage(NoticeBarAssets.iconNoticeCloseRed,
+          package: 'phoenix_noticebar'));
 
   ///蓝色+进行中+箭头
   static NoticeStyle runningWithArrow = NoticeStyle(
-      PhoenixTools.getAssetImage(NoticeBarAssets.iconNoticeRunning),
+      PhoenixTools.getAssetImage(NoticeBarAssets.iconNoticeRunning,
+          package: 'phoenix_noticebar'),
       const Color(0xFF0984F9),
       const Color(0xFFE0EDFF),
-      PhoenixTools.getAssetImage(NoticeBarAssets.iconNoticeArrowBlue));
+      PhoenixTools.getAssetImage(NoticeBarAssets.iconNoticeArrowBlue,
+          package: 'phoenix_noticebar'));
 
   ///蓝色+进行中+关闭
   static NoticeStyle runningWithClose = NoticeStyle(
-      PhoenixTools.getAssetImage(NoticeBarAssets.iconNoticeRunning),
+      PhoenixTools.getAssetImage(NoticeBarAssets.iconNoticeRunning,
+          package: 'phoenix_noticebar'),
       const Color(0xFF0984F9),
       const Color(0xFFE0EDFF),
-      PhoenixTools.getAssetImage(NoticeBarAssets.iconNoticeCloseBlue));
+      PhoenixTools.getAssetImage(NoticeBarAssets.iconNoticeCloseBlue,
+          package: 'phoenix_noticebar'));
 
   ///绿色+完成+箭头
   static NoticeStyle succeedWithArrow = NoticeStyle(
-      PhoenixTools.getAssetImage(NoticeBarAssets.iconNoticeSucceed),
+      PhoenixTools.getAssetImage(NoticeBarAssets.iconNoticeSucceed,
+          package: 'phoenix_noticebar'),
       const Color(0xFF00AE66),
       const Color(0xFFEBFFF7),
-      PhoenixTools.getAssetImage(NoticeBarAssets.iconNoticeArrowGreen));
+      PhoenixTools.getAssetImage(NoticeBarAssets.iconNoticeArrowGreen,
+          package: 'phoenix_noticebar'));
 
   ///绿色+完成+关闭
   static NoticeStyle succeedWithClose = NoticeStyle(
-      PhoenixTools.getAssetImage(NoticeBarAssets.iconNoticeSucceed),
+      PhoenixTools.getAssetImage(NoticeBarAssets.iconNoticeSucceed,
+          package: 'phoenix_noticebar'),
       const Color(0xFF00AE66),
       const Color(0xFFEBFFF7),
-      PhoenixTools.getAssetImage(NoticeBarAssets.iconNoticeCloseGreen));
+      PhoenixTools.getAssetImage(NoticeBarAssets.iconNoticeCloseGreen,
+          package: 'phoenix_noticebar'));
 
   ///橘色+警告+箭头
   static NoticeStyle warningWithArrow = NoticeStyle(
-      PhoenixTools.getAssetImage(NoticeBarAssets.iconNoticeWarning),
+      PhoenixTools.getAssetImage(NoticeBarAssets.iconNoticeWarning,
+          package: 'phoenix_noticebar'),
       const Color(0xFFFAAD14),
       const Color(0xFFFDFCEC),
-      PhoenixTools.getAssetImage(NoticeBarAssets.iconNoticeArrowOrange));
+      PhoenixTools.getAssetImage(NoticeBarAssets.iconNoticeArrowOrange,
+          package: 'phoenix_noticebar'));
 
   ///橘色+警告+关闭
   static NoticeStyle warningWithClose = NoticeStyle(
-      PhoenixTools.getAssetImage(NoticeBarAssets.iconNoticeWarning),
+      PhoenixTools.getAssetImage(NoticeBarAssets.iconNoticeWarning,
+          package: 'phoenix_noticebar'),
       const Color(0xFFFAAD14),
       const Color(0xFFFDFCEC),
-      PhoenixTools.getAssetImage(NoticeBarAssets.iconNoticeCloseOrange));
+      PhoenixTools.getAssetImage(NoticeBarAssets.iconNoticeCloseOrange,
+          package: 'phoenix_noticebar'));
 
   ///橘色+通知+箭头
   static NoticeStyle normalNoticeWithArrow = NoticeStyle(
-      PhoenixTools.getAssetImage(NoticeBarAssets.iconNotice),
+      PhoenixTools.getAssetImage(NoticeBarAssets.iconNotice,
+          package: 'phoenix_noticebar'),
       const Color(0xFFFAAD14),
       const Color(0xFFFDFCEC),
-      PhoenixTools.getAssetImage(NoticeBarAssets.iconNoticeArrowOrange));
+      PhoenixTools.getAssetImage(NoticeBarAssets.iconNoticeArrowOrange,
+          package: 'phoenix_noticebar'));
 
   ///橘色+通知+关闭
   static NoticeStyle normalNoticeWithClose = NoticeStyle(
-      PhoenixTools.getAssetImage(NoticeBarAssets.iconNotice),
+      PhoenixTools.getAssetImage(NoticeBarAssets.iconNotice,
+          package: 'phoenix_noticebar'),
       const Color(0xFFFAAD14),
       const Color(0xFFFDFCEC),
-      PhoenixTools.getAssetImage(NoticeBarAssets.iconNoticeCloseOrange));
+      PhoenixTools.getAssetImage(NoticeBarAssets.iconNoticeCloseOrange,
+          package: 'phoenix_noticebar'));
 }
 
 /// 通知样式
