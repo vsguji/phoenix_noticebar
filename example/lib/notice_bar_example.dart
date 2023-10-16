@@ -6,7 +6,7 @@ import 'package:phoenix_noticebar/phoenix_noticebar.dart';
 
 /// 通知样式example
 
-class BrnNoticeBarExample extends StatelessWidget {
+class NoticeBarExample extends StatelessWidget {
   final List<NoticeStyle> defaultStyles = [
     NoticeStyles.failWithArrow,
     NoticeStyles.failWithClose,

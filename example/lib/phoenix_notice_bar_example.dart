@@ -3,11 +3,12 @@ import 'package:phoenix_navbar/phoenix_navbar.dart';
 import 'package:phoenix_noticebar/phoenix_noticebar.dart';
 
 import 'list_item.dart';
+import 'notice_bar_example.dart';
 import 'notice_bar_with_button_example.dart';
 
 /// 描述: 通知样式example入口
 
-class BrnNoticeBarExample extends StatelessWidget {
+class PhoenixNoticeBarExample extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     int caseIndex = 3;
@@ -145,7 +146,7 @@ class BrnNoticeBarExample extends StatelessWidget {
               onPressed: () {
                 Navigator.of(context)
                     .push(MaterialPageRoute(builder: (context) {
-                  return BrnNoticeBarExample();
+                  return NoticeBarExample();
                 }));
               },
             ),
